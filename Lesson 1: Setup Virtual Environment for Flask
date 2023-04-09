@@ -1,0 +1,19 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "Hello Data To Info"
+
+
+@app.route("/fancy")
+def display_fancy():
+    return """
+    <html>
+    <body>
+    <h1>Greetings people</h1>
+    <p>Hello Data People<p>
+    </body>
+    </html>
+    """
